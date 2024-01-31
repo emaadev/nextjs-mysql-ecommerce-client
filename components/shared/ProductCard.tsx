@@ -24,6 +24,7 @@ const ProductCard = ({ data }: ProductCardProps) => {
         <Image
           src={data?.images?.[0]?.url}
           fill
+          sizes="500"
           alt={data?.name}
           className="aspect-square object-cover rounded-md"
         />
