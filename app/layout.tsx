@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: "Created by /in/emanuelnunez/",
 };
 
-export const nameStore = "yourStoreNameHere";
+export const nameStore = "🐒 MONKEY_STYLE";
 
 export default function RootLayout({
   children,
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <Navbar />
+        <Navbar nameStore={nameStore} />
         {children}
         <Footer nameStore={nameStore} />
       </body>
