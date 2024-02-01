@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Tab } from "@headlessui/react";
 
-import GalleryTab from "@/components/shared/GalleryTab";
+import GalleryTab from "@/components/shared/gallery/GalleryTab";
 
 import { Image as ImageType } from "@/interfaces";
 
@@ -30,7 +30,7 @@ const Gallery = ({ images }: GalleryProps) => {
                 src={image?.url}
                 alt={image?.id}
                 fill
-                className="object-cover object-center"
+                className="w-full object-contain object-center"
               />
             </div>
           </Tab.Panel>

@@ -1,7 +1,7 @@
 import Currency from "@/components/shared/Currency";
 
 import { Product } from "@/interfaces";
-import Button from "./Button";
+import Button from "../Button";
 import { InfoIcon, ShoppingCart } from "lucide-react";
 
 export interface ProductInfoProps {

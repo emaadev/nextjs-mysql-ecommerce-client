@@ -6,7 +6,7 @@ export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, children, disabled, type = "button" }, ref) => {
+  ({ className, children, disabled, type = "button", ...props }, ref) => {
     return (
       <button
         type={type}
@@ -16,6 +16,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           className
         )}
         disabled={disabled}
+        {...props}
       >
         {children}
       </button>

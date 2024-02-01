@@ -19,7 +19,7 @@ const GalleryTab = ({ image }: GalleryTab) => {
               alt={image?.id}
               fill
               sizes="200px"
-              className="object-cover object-center"
+              className="w-full object-contain object-center"
             />
           </span>
 

@@ -2,8 +2,8 @@ import getProduct from "@/actions/getProduct";
 import getProducts from "@/actions/getProducts";
 
 import Container from "@/components/shared/Container";
-import Gallery from "@/components/shared/Gallery";
-import ProductInfo from "@/components/shared/ProductInfo";
+import Gallery from "@/components/shared/gallery/Gallery";
+import ProductInfo from "@/components/shared/product/ProductInfo";
 import ProductsList from "@/components/shared/ProductsList";
 
 export interface ProductPageProps {

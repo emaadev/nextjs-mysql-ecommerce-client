@@ -1,5 +1,5 @@
 import NoResults from "@/components/shared/NoResults";
-import ProductCard from "@/components/shared/ProductCard";
+import ProductCard from "@/components/shared/product/ProductCard";
 
 import { ProductsListProps } from "@/interfaces";
 
