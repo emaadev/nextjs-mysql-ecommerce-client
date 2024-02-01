@@ -53,11 +53,16 @@ const OrderSummary = () => {
       </div>
 
       <div className="flex flex-col mt-6 gap-4">
-        <Button onClick={onCheckout} className="w-full ">
+        <Button
+          disabled={items.length === 0}
+          onClick={onCheckout}
+          className="w-full "
+        >
           Go to Checkout
         </Button>
 
         <Button
+          disabled={items.length === 0}
           onClick={() => removeAll()}
           className="w-full bg-transparent border border-gray-300 text-black"
         >
